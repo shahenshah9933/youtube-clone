@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Video Gallery</title>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow p-4 flex items-center justify-between">
+        <div class="text-lg font-semibold">My Video Gallery</div>
+        <div class="flex items-center">
+            <input type="text" id="searchInput" placeholder="Search" class="border rounded p-2 w-full md:w-64" />
+            <button id="searchButton" type="submit" class="ml-2 bg-blue-500 text-white p-2 rounded hover:bg-blue-600">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="flex flex-col md:flex-row p-4">
+        <nav class="sidebar bg-gray-200 p-4 w-full md:w-1/4">
+            <ul class="space-y-2">
+                <li><a href="#" class="text-gray-700 hover:text-blue-600">Home</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-600">Trending</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-600">Subscriptions</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-600">Library</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-600">History</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-600">Your Videos</a></li>
+            </ul>
+        </nav>
+
+        <div class="content flex-1 p-4">
+            <div id="videoContainer" class="overflow-auto">
+                <ul id="videoTableBody" class="video-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- Video items will be injected here -->
+                </ul>
+            </div>
+            
+            <div id="paginationContainer" class="mt-4 flex justify-center">
+                <div id="pagination" class="flex space-x-2"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="pub.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #0f0f0f;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+/* Video Container */
+.video-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.video-js {
+    width: 100%;
+    height: auto;
+}
+
+#videoPlayer {
+    width: 100%;
+    max-height: 720px;
+    background-color: #000;
+}
+
+.video-details {
+    padding: 16px;
+    margin-top: 15px;
+}
+
+#videoTitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+#videoUsername {
+    font-size: 14px;
+    color: #606060;
+}
+
+#videoDescription {
+    font-size: 14px;
+    color: #606060;
+    margin-top: 8px;
+}
+
+.engagement {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0
+}
+
+#viewsCount, #uploadDate {
+    font-size: 14px;
+    color: #606060;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.buttons button {
+    background-color: transparent;
+    border: none;
+    color: #606060;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+.buttons button:hover {
+    color: #000;
+}
+
+.like-btn, .dislike-btn, .share-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.like-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+.dislike-btn {
+    background-color: #F44336; /* Red */
+    color: white;
+}
+/* Comment Section */
+.comment-section {
+    margin: 20px auto;
+    padding: 16px;
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.share-btn {
+    background-color: #008CBA; /* Blue */
+    color: white;
+}
+
+.comment-section h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+#commentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#commentInput {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+#commentForm button {
+    align-self: flex-end;
+    padding: 8px 16px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#commentForm button:hover {
+    background-color: #cc0000;
+}
+
+#commentsList {
+    margin-top: 20px;
+}
+
+
+.comment {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 5px 0;
+}
+
+/* Suggested Videos */
+.suggested-videos {
+    margin: 20px auto;
+    padding: 16px;
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.suggested-videos h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+#suggestedList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#suggestedList li {
+    list-style-type: none;
+    font-size: 14px;
+    color: #065fd4;
+    cursor: pointer;
+    padding: 8px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#suggestedList li:hover {
+    color: #ff0000;
+}
+.like-dislike-counts {
+    margin-top: 10px;
+}
